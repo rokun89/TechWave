@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* shared style */
+.flex-cls{
+    display: flex;
+}
+
+
+
+
+
+/* nav styles */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav>img{
+    width: 220px;
+    height: 32px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 0.9;
+    margin-right: 32px;
+}
+.nav-btn{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    background: linear-gradient(
+        to right,
+        rgba(247, 233, 63, 1),
+        rgba(251, 9, 180, 1),
+        rgba(145, 0, 248, 1)
+    );
+    padding: 14px;
+    border-radius: 50px;
+    border: none;
+    width: 145px;
+    height: 45px;
+}
+
+
+
+
+/* banner styles */
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 760px;
+    background-image: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner-img-div{
+    min-width: 400px;
+    min-height: 350px;
+    background-image: url("../assets/hero-circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.banner-img-div>img{
+    margin-top: 100px;
+}
+.banner-title{
+   color: #FFFFFF;
+   font-size: 3.75rem;
+   font-weight: 900;
+   margin-bottom: 5px;
+}
+.banner-description{
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.spotify-btn{
+   color: #FFFFFF;
+   font-size: 1rem;
+   font-weight: 500;
+   padding: 12px;
+   border-radius: 40px;
+   border: none;
+   width: 200px;
+   height: 45px;
+   background: linear-gradient(
+    to right,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+   );
+}
+.subscribe-btn{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 148px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #00FF88;
+    border-radius: 30px;
+    padding: 12px;
+    margin-left: 5px;
+}
