@@ -223,6 +223,7 @@ nav>img {
     align-items: center;
     margin-left: 60px;
     margin-right: 30px;
+    margin-bottom: 100px;
     
 }
 .episodes-card{
@@ -259,4 +260,60 @@ nav>img {
     color: #00FF88;
     font-weight: 500;
     padding-left: 10px;
+}
+
+
+
+
+
+
+
+/* host styles */
+.host-container{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+    max-width: 85%;
+    min-height: 280px;
+    margin-left: 90px;
+    margin-bottom: 100px;
+}
+.host-img{
+    padding-left: 40px;
+}
+.host-title{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.host-name{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.host-subtitle{
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 16px;
+    max-width: 85%;
+}
+.social-icon i{
+    background: linear-gradient(
+        #F7E93F,
+        #FB09B4,
+        #9100F8
+    );
+    
+}
+
+.social-icon >a{
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
 }
