@@ -11,7 +11,7 @@
 
 
 /* shared style */
-body>section{
+main > section{
     margin-top: 100px;
 }
 
@@ -191,5 +191,72 @@ nav>img {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 150px;
+    margin-top: 130px;
+    margin-bottom: 150px;
+}
+
+
+
+
+
+
+/* Techwave styles */
+
+.techwave-title{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Episodes styles */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 30px;
+    
+}
+.episodes-card{
+    max-width: 380px;
+    min-height: 440px;
+    padding: 10px;
+    background-color: #250D44;
+    border: none;
+    border-radius: 25px;
+}
+.episodes-title{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+.card-title{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+.card-description{
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    max-width: 340px;
+}
+.card-subtitle{
+    color: #00FF88;
+    font-weight: 500;
+    padding-left: 10px;
 }
