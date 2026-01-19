@@ -108,6 +108,7 @@ nav>img {
     color: #FFFFFF;
     margin-top: 0px;
     margin-bottom: 15px;
+    opacity: 0.8;
 }
 
 .spotify-btn {
@@ -154,4 +155,41 @@ nav>img {
     right: 100px;
     border-radius: 1000px;
     border: none;
+}
+
+
+
+
+/* About section style */
+.about-title{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+.about-description{
+    color: #FFFFFF;
+    text-align: center;
+    opacity: 0.8;
+}
+.about-subtitle{
+    color: #FFFFFF;
+}
+
+
+.rating-title{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 1000;
+    margin-bottom: 16px;
+}
+.rating-subtitle{
+   color: #FFFFFF;
+   opacity: 0.8; 
+}
+.about-follower-div{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 150px;
 }
