@@ -316,10 +316,10 @@ nav>img {
 }
 
 .techwave {
-    display: grid;
     gap: 30px;
     padding: 200px;
     margin-top: -150px;
+    display: grid;
     grid-template-areas:
         "audio      mobile      mobile"
         "audio      global      global"
@@ -525,7 +525,6 @@ footer span {
 
 /* small device responsive */
 @media screen and (max-width:576px) {
-
     .nav-list,
     .nav-btn {
         display: none;
@@ -544,7 +543,7 @@ footer span {
         justify-content: center;
         align-items: center;
         text-align: center;
-         background-image: url("../assets/hero-bg.png");
+        background-image: url("../assets/hero-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -555,6 +554,9 @@ footer span {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 70%;
+    }
+    .banner-description{
+        padding: 2px;
     }
 
     .about-title {
@@ -569,14 +571,14 @@ footer span {
         font-size: 2rem;
     }
 
-    .audio {
-        grid-area: audio;
-        height: 530px;
-    }
-
     .mobile {
         grid-area: mobile;
         height: 225px;
+    }
+
+    .audio {
+        grid-area: audio;
+        width: fit-content;
     }
 
     .global {
@@ -598,6 +600,9 @@ footer span {
         display: grid;
         justify-content: center;
         align-items: center;
+        gap: 30px;
+        padding: 200px;
+        margin-right: 10px;
         grid-template-areas:
             "audio"
             "mobile"
@@ -644,17 +649,8 @@ footer span {
         margin-top: 30px;
     }
 
-    footer {
-        height: 415px;
-        /* background-image: url("../assets/footer-bg.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%; */
-
-    }
-
     .footer-container {
-         background-image: url("../assets/footer-bg.png");
+        background-image: url("../assets/footer-bg.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
