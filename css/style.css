@@ -538,16 +538,16 @@ footer span {
     .banner {
         flex-direction: column;
         margin: auto;
-        background-image: url("../assets/hero-bg.png");
-        background-repeat: no-repeat;
-        background-position: center;
-
     }
 
     .banner-container {
         justify-content: center;
         align-items: center;
         text-align: center;
+         background-image: url("../assets/hero-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .banner-img-div {
@@ -569,16 +569,8 @@ footer span {
         font-size: 2rem;
     }
 
-    /* .audio,
-.mobile,
-.global,
-.exclusive,
-.rich {
-    padding: 5px;
-} */
     .audio {
         grid-area: audio;
-        /* width: 380px; */
         height: 530px;
     }
 
@@ -615,11 +607,75 @@ footer span {
         ;
     }
 
-    .episodes-title{
+    .episodes-title {
         font-size: 2.5rem;
     }
-    
 
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: auto;
+    }
+
+    .host-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 100px;
+        max-width: 95%;
+    }
+
+    .host-subtitle {
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    .social-icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .host-img {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    footer {
+        height: 415px;
+        /* background-image: url("../assets/footer-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%; */
+
+    }
+
+    .footer-container {
+         background-image: url("../assets/footer-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-img>img {
+        width: 70%;
+        height: 70%;
+        margin-left: 40px;
+    }
+
+    .footer-icon {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 
 
 }
