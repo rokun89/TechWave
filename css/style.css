@@ -59,8 +59,30 @@ nav>img {
     border: none;
     width: 145px;
     height: 45px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
+.nav-btn:hover {
+    transform: translateY(-15px);
+    background: black;
+}
+
+.hamburger {
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+
+.hamburger span {
+    width: 25px;
+    height: 4px;
+    background: #FFFFFF;
+    margin: 2px 0;
+}
 
 
 
@@ -124,7 +146,15 @@ nav>img {
             rgba(247, 233, 63, 1),
             rgba(251, 9, 180, 1),
             rgba(145, 0, 248, 1));
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+
+.spotify-btn:hover {
+    transform: translateY(-15px);
+    background: black;
+}
+
 
 .subscribe-btn {
     color: #00FF88;
@@ -137,6 +167,13 @@ nav>img {
     border-radius: 30px;
     padding: 12px;
     margin-left: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.subscribe-btn:hover {
+    transform: translateY(-15px);
+    background: white;
 }
 
 .banner-circle {
@@ -221,10 +258,12 @@ nav>img {
 .exclusive,
 .rich {
     color: #FFFFFF;
-    background-color: rgba(53, 17, 101, 0.4); 
-    border:none;
+    background-color: rgba(53, 17, 101, 0.4);
+    border: none;
     border-radius: 35px;
     padding: 25px;
+    cursor: pointer;
+
 }
 
 .audio {
@@ -232,22 +271,29 @@ nav>img {
     width: 380px;
     height: 530px;
 }
-.audio-subtitle{
+
+.audio-subtitle {
     color: #FFFFFF;
     opacity: 0.6;
     max-width: 300px;
 }
-.audio>img{
+
+.audio>img {
     margin-top: 150px;
 }
+
 .mobile {
     grid-area: mobile;
     height: 225px;
 }
-.mobile-subtitle, .global-subtitle, .exclusive-subtitle{
+
+.mobile-subtitle,
+.global-subtitle,
+.exclusive-subtitle {
     color: #FFFFFF;
     opacity: 0.6;
 }
+
 .global {
     grid-area: global;
     height: 225px;
@@ -262,11 +308,13 @@ nav>img {
     grid-area: rich;
     height: 250px;
 }
-.rich-subtitle{
+
+.rich-subtitle {
     color: #FFFFFF;
     opacity: 0.6;
     width: 300px;
 }
+
 .techwave {
     display: grid;
     gap: 30px;
@@ -278,7 +326,8 @@ nav>img {
         "exclusive  exclusive   rich"
     ;
 }
-.shared-title{
+
+.shared-title {
     color: #FFFFFF;
     font-size: 1.5rem;
     font-weight: 800;
@@ -310,6 +359,13 @@ nav>img {
     background-color: #250D44;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.episodes-card:hover {
+    transform: translateY(-15px);
+    background: transparent;
 }
 
 .episodes-title {
@@ -454,4 +510,116 @@ footer span {
     font-size: 0.8rem;
     opacity: 0.6;
     margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* small device responsive */
+@media screen and (max-width:576px) {
+
+    .nav-list,
+    .nav-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin: auto;
+        background-image: url("../assets/hero-bg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .banner-container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-img-div {
+        background-image: url("../assets/hero-circle.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-follower-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .techwave-title {
+        font-size: 2rem;
+    }
+
+    /* .audio,
+.mobile,
+.global,
+.exclusive,
+.rich {
+    padding: 5px;
+} */
+    .audio {
+        grid-area: audio;
+        /* width: 380px; */
+        height: 530px;
+    }
+
+    .mobile {
+        grid-area: mobile;
+        height: 225px;
+    }
+
+    .global {
+        grid-area: global;
+        height: 225px;
+    }
+
+    .exclusive {
+        grid-area: exclusive;
+        height: 250px;
+    }
+
+    .rich {
+        grid-area: rich;
+        height: 250px;
+    }
+
+    .techwave {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas:
+            "audio"
+            "mobile"
+            "global"
+            "exclusive"
+            "rich"
+        ;
+    }
+
+    .episodes-title{
+        font-size: 2.5rem;
+    }
+    
+
+
+
 }
